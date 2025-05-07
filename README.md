@@ -28,3 +28,5 @@ Das selbe für das Frontend Linting  (![FrontendLinting](images/FrontendLinting.
 Das Backend wurde auch richtig gestaret: (![PipelineBackendLogs](images/PipelineBackendLogs.png)) 
 PipelineFrontedLogs
 letztlich wurde auch das frontend erfolgreich gestartet: (![PipelineFrontendLogs](images/PipelineFrontendLogs.png)) 
+
+Letztlich wurde das auf einem neuem Node gestarted, nicht Master Node: (![NodeDocker](images/NodeDocker.png)) 
