@@ -86,15 +86,16 @@ pipeline {
             }
         }
 
-                stage('Trigger Render Deployment') {
+        stage('Trigger Render Deployment') {
             steps {
                 script {
                     withCredentials([string(credentialsId: 'renderToken', variable: 'KEY')]) {
-                        sh "curl https://api.render.com/deploy/$KEY"
+                        sh "curl $KEY"
                     }
                 }
             }
         }
+
 
     }
 }
