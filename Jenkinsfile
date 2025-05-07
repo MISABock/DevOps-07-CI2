@@ -79,7 +79,7 @@ pipeline {
             steps {
                 dir('backend') {
                     sh '''
-                        echo "Building Docker image..."
+                        export DOCKER_HOST=tcp://host.docker.internal:2375
                         docker build -f docker.dockerfile -t mosazhaw/devopsdemo .
                     '''
                 }
