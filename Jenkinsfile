@@ -6,10 +6,6 @@ pipeline {
         }
     }
 
-    environment {
-        DOCKER_HOST = "unix:///var/run/docker.sock"
-    }
-
     stages {
         stage('Checkout') {
             steps {
